@@ -31,7 +31,7 @@ public class SubArrayPositives {
         int[] a = {1, -1, 5, -2, 3};
         long k = 3;
         int result = longestSubarrayWithSumK(a, k);
-        System.out.println("Length of the longest subarray with sum " + k + ": " + result);
+        System.out.println("Length of the longest subarray with sum " + k + ": " + result);;
     }
 }
 
