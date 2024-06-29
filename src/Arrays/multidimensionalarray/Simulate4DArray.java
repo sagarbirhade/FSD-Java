@@ -10,7 +10,7 @@ public class Simulate4DArray {
         // Get dimensions from the user
         System.out.print("Enter the size for dimension 1: ");
         int dim1 = sc.nextInt();
-        System.out.print("Enter the size for dimension 2: ");
+        System.out.print("Enter the size for dimension 2: ");;
         int dim2 = sc.nextInt();
         System.out.print("Enter the size for dimension 3: ");
         int dim3 = sc.nextInt();
