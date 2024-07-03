@@ -8,14 +8,16 @@ public class Bank1 {
     private long deposit;
     private long withdrawal;
     private long atm_no;
+    private String password;
 
-    public Bank1(long ac_no, long balance, long check_no, long deposit, long withdrawal, long atm_no){
+    public Bank1(long ac_no, long balance, long check_no, long deposit, long withdrawal, long atm_no, String password){
         this.ac_no = ac_no;
         this.balance = balance;
         this.check_no = check_no;
         this.deposit = deposit;
         this.withdrawal = withdrawal;
         this.atm_no = atm_no;
+        this.password = password;
     }
     public Bank1(long ac_no, long check_no, long atm_no){
         this.ac_no = ac_no;
@@ -72,6 +74,18 @@ public class Bank1 {
 
     public long getAtm_no() {
         return atm_no;
+    }
+
+    public void setPassword(String newPassword) throws InvalidPasswordException {
+        if (newPassword.equals(password)) {
+            throw new InvalidPasswordException("New password cannot be the same as current password!");
+        }
+        this.password = newPassword;
+    }
+
+    // Existing getPassword() method (if needed)
+    public String getPassword() {
+        return password;
     }
 
     public void setAtm_no(long atm_no) {

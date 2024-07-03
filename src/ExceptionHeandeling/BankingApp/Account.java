@@ -72,10 +72,11 @@ public class Account {
                 case 4:
                     System.out.print("Enter Current Password: ");
                     String enteredCurrentPassword = sc.nextLine();
+                    sc.nextLine();
 
                     if (!enteredCurrentPassword.equals(passval)) {
-                        throw new InvalidPasswordException("Incorrect Password");
-
+                        System.out.println("Incorrect Current Password!");
+                        break;
                     }
 
                     System.out.print("Enter New Password: ");
@@ -85,6 +86,8 @@ public class Account {
                         System.out.println("New password cannot be the same as current password!");
                         break;
                     }
+
+                    b1.setPassword(newPassword); // Assuming setPassword() exists in Bank1
                     passval = newPassword;
                     System.out.println("Password Changed Successfully!");
                     break;
