@@ -57,6 +57,9 @@ public class VectorDemo {
         v5.add(90);
         v5.add(100);
         System.out.println("Capacity After: "+v5.capacity());
+        System.out.println(v5.reversed());
+        System.out.println(v5.contains(100));
+        System.out.println(v5.isEmpty());
 
     }
 }
