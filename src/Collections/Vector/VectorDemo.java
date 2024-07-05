@@ -44,5 +44,19 @@ public class VectorDemo {
 //        Vector<String> v2 = new Vector<String>(20);
 //        System.out.println(v2.capacity());
 
+        Vector<Integer> v5 = new Vector<>(15,5);
+        System.out.println("capactiy before: "+v5.capacity());
+        v5.add(10);
+        v5.add(20);
+        v5.add(30);
+        v5.add(40);
+        v5.add(50);
+        v5.add(60);
+        v5.add(70);
+        v5.add(80);
+        v5.add(90);
+        v5.add(100);
+        System.out.println("Capacity After: "+v5.capacity());
+
     }
 }
