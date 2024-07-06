@@ -55,5 +55,11 @@ public class HashSetDemo {
         while(itr.hasNext()){
             System.out.print(itr.next()+" ");
         }
+
+
+
+
+
+
     }
 }
